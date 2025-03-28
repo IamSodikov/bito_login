@@ -32,6 +32,7 @@ Project Structure:
             │   └── login_page.py
             ├── config.py
             └── .env
+
 ✅ How to Run the Tests
 
 To run the tests, execute the following command in the terminal:
