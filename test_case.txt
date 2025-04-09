@@ -1,0 +1,12 @@
+Test Case ID: BITO_LOGIN_001
+Feature: Login funksiyasi
+Scenario: Foydalanuvchi to‘g‘ri login ma’lumotlari bilan tizimga muvaffaqiyatli kiradi
+ Given foydalanuvchi login sahifasida
+ When foydalanuvchi telefon raqamini "938013700" kiritadi
+ And foydalanuvchi parolni "11112222" kiritadi
+ And foydalanuvchi "Kirish" tugmasini bosadi
+ Then foydalanuvchi bosh sahifaga muvaffaqiyatli yo‘naltiriladi
+Test muhiti: Chrome Browser (versiya:134.0.6998.177)
+Prioritet: High
+Ma'lumotlar: Telefon: 938013700, Parol: 11112222
+Kutilayotgan URL: https://xn.bito.uz/dashboard
