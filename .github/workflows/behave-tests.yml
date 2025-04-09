@@ -18,16 +18,13 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Chrome va WebDriver o‘rnatish
+    - name: Chrome o‘rnatish
       run: |
-        sudo apt-get update
-        sudo apt-get install -y wget unzip xvfb libxi6 libnss3 libxss1 libgtk-3-0 libdbus-glib-1-2
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo dpkg -i google-chrome*.deb || sudo apt-get -f install -y
-        wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
-        unzip chromedriver_linux64.zip
-        sudo mv chromedriver /usr/local/bin/
-        sudo chmod +x /usr/local/bin/chromedriver
+       sudo apt-get update
+       sudo apt-get install -y wget unzip xvfb libxi6 libnss3 libxss1 libgtk-3-0 libdbus-glib-1-2
+       wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+       sudo dpkg -i google-chrome*.deb || sudo apt-get -f install -y
+
 
     - name: Kutubxonalarni o‘rnatish
       run: |
